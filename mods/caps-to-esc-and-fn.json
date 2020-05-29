@@ -1,0 +1,28 @@
+{
+  "title": "CAPS to ESC and FN",
+  "rules": [
+    {
+      "description": "CAPS to ESC and FN",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to_if_alone": [
+            {
+              "repeat": true,
+              "key_code": "escape"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "repeat": true,
+              "key_code": "fn"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
